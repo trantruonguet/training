@@ -10,9 +10,10 @@ import UIKit
 
 class HomeVC: UIViewController {
 
+    @IBOutlet weak var btnLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        btnLogin.layer.cornerRadius = 8
     }
 
 

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,13 +14,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="auJ-ic-JKO">
+                                <rect key="frame" x="20" y="563" width="374" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5Q-Bo-kBk">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Z0a-he-xpd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VZ8-zx-dD0">
+                                        <rect key="frame" x="110" y="0.0" width="264" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBc-I8-C6o">
+                                <rect key="frame" x="20" y="607" width="374" height="34"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSU-9a-bQ7">
+                                        <rect key="frame" x="0.0" y="6.9999999999999982" width="100" height="20.333333333333329"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="1AM-hH-UHK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h19-iw-gGg">
+                                        <rect key="frame" x="110" y="0.0" width="264" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbt-bE-yED">
+                                <rect key="frame" x="131" y="686" width="152" height="43"/>
+                                <color key="backgroundColor" red="0.7803921568627451" green="0.87058823529411766" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="6XE-rz-C9T"/>
+                                    <constraint firstAttribute="height" constant="43" id="Us2-jP-bud"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="256-512" translatesAutoresizingMaskIntoConstraints="NO" id="ibD-YT-uzS">
+                                <rect key="frame" x="132" y="233" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="5lT-IO-7ln"/>
+                                    <constraint firstAttribute="height" constant="150" id="lJh-Bd-Ara"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GD STUDIO (1)" translatesAutoresizingMaskIntoConstraints="NO" id="GGg-5k-VLH">
+                                <rect key="frame" x="70.666666666666686" y="423" width="273" height="50"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="auJ-ic-JKO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3ZN-cN-vKK"/>
+                            <constraint firstItem="qBc-I8-C6o" firstAttribute="top" secondItem="auJ-ic-JKO" secondAttribute="bottom" constant="10" id="4f4-Wt-nRw"/>
+                            <constraint firstItem="GGg-5k-VLH" firstAttribute="top" secondItem="ibD-YT-uzS" secondAttribute="bottom" constant="40" id="Dvi-9T-4eF"/>
+                            <constraint firstItem="Vbt-bE-yED" firstAttribute="top" secondItem="qBc-I8-C6o" secondAttribute="bottom" constant="45" id="EKQ-9A-Qkl"/>
+                            <constraint firstItem="auJ-ic-JKO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xoi-Vt-c8G"/>
+                            <constraint firstItem="GGg-5k-VLH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YnZ-j0-VtO"/>
+                            <constraint firstItem="Vbt-bE-yED" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Zxc-lu-6vV"/>
+                            <constraint firstItem="qBc-I8-C6o" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bVW-vx-RJr"/>
+                            <constraint firstItem="auJ-ic-JKO" firstAttribute="top" secondItem="GGg-5k-VLH" secondAttribute="bottom" constant="90" id="eOc-II-r0N"/>
+                            <constraint firstItem="ibD-YT-uzS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="o73-zT-E0t"/>
+                            <constraint firstItem="qBc-I8-C6o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="qrf-PB-dad"/>
+                            <constraint firstItem="GGg-5k-VLH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="uBl-6T-MgN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="btnLogin" destination="Vbt-bE-yED" id="1IU-Ns-XKL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="132" y="139"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="256-512" width="512" height="512"/>
+        <image name="GD STUDIO (1)" width="273" height="50"/>
+    </resources>
 </document>
