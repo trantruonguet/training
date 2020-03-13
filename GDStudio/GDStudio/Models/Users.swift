@@ -7,7 +7,15 @@
 //
 
 import Foundation
+import RealmSwift
 
-class Users {
+class Users: Object {
+    @objc dynamic var name = ""
+    @objc dynamic var password = ""
+    @objc dynamic var image: Data?
     
+    
+    override static func primaryKey() -> String? {
+        return "name"
+    }
 }
