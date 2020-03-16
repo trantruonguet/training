@@ -25,7 +25,10 @@ class HomeVC: UIViewController {
         usename.delegate = self
         btnLogin.layer.cornerRadius = 8
         avatrImageView.layer.cornerRadius = 150/2
+        
+      
     }
+    
     
     
     @IBAction func actionLogin(_ sender: Any) {
@@ -71,6 +74,7 @@ extension HomeVC {
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
         self.present(imagePicker, animated: true, completion: nil)
+        
     }
     
     private func createUser(username: String, password: String, image: UIImage) {
@@ -114,7 +118,7 @@ extension HomeVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         if let image = info[.editedImage] as? UIImage {
-            avatrImageView.image = image
+            avatrImageView.image = image.resizeImage(100, opaque: true)
             password.isEnabled = true
         }
         
@@ -122,8 +126,6 @@ extension HomeVC: UIImagePickerControllerDelegate, UINavigationControllerDelegat
 }
 
 private func password(passwod: String)->Bool{
-    
-    
     
     return false
 }

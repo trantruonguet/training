@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="auJ-ic-JKO">
-                                <rect key="frame" x="20" y="563" width="374" height="34"/>
+                                <rect key="frame" x="20" y="588" width="374" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Username:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a5Q-Bo-kBk">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="34"/>
@@ -35,7 +35,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBc-I8-C6o">
-                                <rect key="frame" x="20" y="607" width="374" height="34"/>
+                                <rect key="frame" x="20" y="632" width="374" height="34"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="password:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSU-9a-bQ7">
                                         <rect key="frame" x="0.0" y="6.9999999999999982" width="100" height="20.333333333333329"/>
@@ -54,7 +54,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vbt-bE-yED">
-                                <rect key="frame" x="131" y="686" width="152" height="43"/>
+                                <rect key="frame" x="131" y="711" width="152" height="43"/>
                                 <color key="backgroundColor" red="0.7803921568627451" green="0.87058823529411766" blue="0.52549019607843139" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="152" id="6XE-rz-C9T"/>
@@ -68,14 +68,14 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="256-512" translatesAutoresizingMaskIntoConstraints="NO" id="ibD-YT-uzS">
-                                <rect key="frame" x="132" y="233" width="150" height="150"/>
+                                <rect key="frame" x="132" y="208" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="5lT-IO-7ln"/>
                                     <constraint firstAttribute="height" constant="150" id="lJh-Bd-Ara"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GD STUDIO (1)" translatesAutoresizingMaskIntoConstraints="NO" id="GGg-5k-VLH">
-                                <rect key="frame" x="70.666666666666686" y="423" width="273" height="50"/>
+                                <rect key="frame" x="-66" y="398" width="546" height="100"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -106,7 +106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-293" y="104"/>
+            <point key="canvasLocation" x="-641" y="15"/>
         </scene>
     </scenes>
     <resources>

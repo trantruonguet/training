@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "Home"; ObjectID = "Ozd-1w-Ajf"; */
+"Ozd-1w-Ajf.text" = "Home";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "Vbt-bE-yED"; */
+"Vbt-bE-yED.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Username:"; ObjectID = "a5Q-Bo-kBk"; */
+"a5Q-Bo-kBk.text" = "Username:";
+
+/* Class = "UILabel"; text = "password:"; ObjectID = "qSU-9a-bQ7"; */
+"qSU-9a-bQ7.text" = "password:";
