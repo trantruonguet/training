@@ -16,6 +16,9 @@
 		11752875241895C00044BA78 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11752874241895C00044BA78 /* Constants.swift */; };
 		11752877241896130044BA78 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11752876241896130044BA78 /* Users.swift */; };
 		AD359073241F5F5900DE4D14 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD359072241F5F5900DE4D14 /* UIImage.swift */; };
+		AD3769B82420A56D00641FDF /* MhHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3769B72420A56D00641FDF /* MhHome.swift */; };
+		AD38A462242355F8007BB6BC /* Baidang.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A461242355F8007BB6BC /* Baidang.swift */; };
+		AD38A46424237BE7007BB6BC /* Statut.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD38A46324237BE7007BB6BC /* Statut.swift */; };
 		B835CA3544C16A8FE0A179D0 /* Pods_GDStudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6D692FF225DB57307E0F5D /* Pods_GDStudio.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +37,9 @@
 		2C6D692FF225DB57307E0F5D /* Pods_GDStudio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDStudio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A674755720C59039AEF4742 /* Pods-GDStudio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDStudio.release.xcconfig"; path = "Target Support Files/Pods-GDStudio/Pods-GDStudio.release.xcconfig"; sourceTree = "<group>"; };
 		AD359072241F5F5900DE4D14 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		AD3769B72420A56D00641FDF /* MhHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MhHome.swift; sourceTree = "<group>"; };
+		AD38A461242355F8007BB6BC /* Baidang.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baidang.swift; sourceTree = "<group>"; };
+		AD38A46324237BE7007BB6BC /* Statut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Statut.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				11752876241896130044BA78 /* Users.swift */,
+				AD38A461242355F8007BB6BC /* Baidang.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				1175285F241895570044BA78 /* HomeVC.swift */,
+				AD3769B72420A56D00641FDF /* MhHome.swift */,
+				AD38A46324237BE7007BB6BC /* Statut.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -263,11 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD3769B82420A56D00641FDF /* MhHome.swift in Sources */,
 				11752860241895570044BA78 /* HomeVC.swift in Sources */,
 				1175285C241895570044BA78 /* AppDelegate.swift in Sources */,
 				11752877241896130044BA78 /* Users.swift in Sources */,
 				AD359073241F5F5900DE4D14 /* UIImage.swift in Sources */,
+				AD38A46424237BE7007BB6BC /* Statut.swift in Sources */,
 				1175285E241895570044BA78 /* SceneDelegate.swift in Sources */,
+				AD38A462242355F8007BB6BC /* Baidang.swift in Sources */,
 				11752875241895C00044BA78 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -398,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

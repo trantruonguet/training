@@ -14,33 +14,35 @@ class HomeVC: UIViewController {
     @IBOutlet weak var lbpasword: UILabel!
     @IBOutlet weak var avatrImageView: UIImageView!
     
-    
     @IBOutlet weak var usename: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    
+
     @IBOutlet weak var btnLogin: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         password.delegate = self
         usename.delegate = self
+        
         btnLogin.layer.cornerRadius = 8
         avatrImageView.layer.cornerRadius = 150/2
         
-      
     }
-    
-    
     
     @IBAction func actionLogin(_ sender: Any) {
         
         createUser(username: usename.text!, password: password.text!, image: avatrImageView.image!)
         
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "MhHome") as! MhHome
+       
+//        vc?.modalPresentationStyle = .fullScreen
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
 
 extension HomeVC {
-    
     
     private func isUserExist(username: String) -> Users? {
         let realm = try? Realm()
@@ -74,7 +76,6 @@ extension HomeVC {
         imagePicker.allowsEditing = true
         imagePicker.delegate = self
         self.present(imagePicker, animated: true, completion: nil)
-        
     }
     
     private func createUser(username: String, password: String, image: UIImage) {
@@ -113,7 +114,6 @@ extension HomeVC: UITextFieldDelegate {
     }
 }
 
-
 extension HomeVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
@@ -129,6 +129,11 @@ private func password(passwod: String)->Bool{
     
     return false
 }
+
+//private func cap(cap: String)->Bool{
+//    
+//    return false
+//}
 
 
 
