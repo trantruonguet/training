@@ -52,7 +52,7 @@ extension RealmDBManager {
     }
     
     func allpost() -> Results<Post> {
-        return mainRealm.objects(Post.self)
+        return mainRealm.objects(Post.self).sorted(byKeyPath: "time", ascending: false)
     }
     
 }

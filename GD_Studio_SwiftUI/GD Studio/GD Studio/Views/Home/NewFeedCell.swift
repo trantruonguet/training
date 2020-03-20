@@ -66,7 +66,7 @@ struct NewFeedCell: View {
             }).buttonStyle(ScaleButtonStyle())
             
             Text("3").foregroundColor(.gray).font(.caption)
-            Image(systemName: "star.fill").foregroundColor(.gray)
+            Image(systemName: "text.bubble").foregroundColor(.gray)
             
             Button(action: {
                 self.isPressLike = !self.isPressLike
