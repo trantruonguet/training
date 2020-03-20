@@ -61,10 +61,7 @@ struct ContentView: View {
                 Text("Username").frame(width: 100)
                 TextField("", text: $viewModel.username) {
                     self.viewModel.checkLoginUser()
-                }.alert(isPresented: $viewModel.isShowAlertCreateUser, content: {
-                    self.alertCreatUser()
-                })
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                }.textFieldStyle(RoundedBorderTextFieldStyle())
             }.padding(.horizontal)
             HStack(spacing: 20) {
                 Text("Password").frame(width: 100)
@@ -86,6 +83,9 @@ struct ContentView: View {
         }.sheet(isPresented: $viewModel.showImagePicker) {
             ImagePicker(uiImage: self.$viewModel.image)
         }.alert(isPresented: $viewModel.isShowAlertInvalidPasswrd, content: alertInvalidPassword)
+        .alert(isPresented: $viewModel.isShowAlertCreateUser, content: {
+            self.alertCreatUser()
+        })
     }
     
     func alertCreatUser() -> Alert {

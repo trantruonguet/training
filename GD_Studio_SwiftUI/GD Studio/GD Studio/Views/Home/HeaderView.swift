@@ -47,3 +47,4 @@ struct HeaderView_Previews: PreviewProvider {
         HeaderViewCell(user: User())
     }
 }
+
